@@ -8,23 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		64CC916D2A0A72C200468EEB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CC916C2A0A72C200468EEB /* main.swift */; };
+		64CC91752A0A734C00468EEB /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 64CC91742A0A734C00468EEB /* SwiftCSV */; };
+		64CC91772A0A73C400468EEB /* Iris.csv in CopyFiles */ = {isa = PBXBuildFile; fileRef = 64CC91762A0A73AE00468EEB /* Iris.csv */; };
+		64CC91792A0A743B00468EEB /* KNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CC91782A0A743B00468EEB /* KNN.swift */; };
+		64CC917B2A0A83E300468EEB /* Iris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CC917A2A0A83E300468EEB /* Iris.swift */; };
+		64CC917D2A0D097200468EEB /* Perceptron.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CC917C2A0D097200468EEB /* Perceptron.swift */; };
+		64CC917F2A0D150D00468EEB /* DMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CC917E2A0D150D00468EEB /* DMC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		64CC91672A0A72C200468EEB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				64CC91772A0A73C400468EEB /* Iris.csv in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		64CC91692A0A72C200468EEB /* BuildAIFromScratch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BuildAIFromScratch; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CC916C2A0A72C200468EEB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		64CC91762A0A73AE00468EEB /* Iris.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Iris.csv; sourceTree = "<group>"; };
+		64CC91782A0A743B00468EEB /* KNN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNN.swift; sourceTree = "<group>"; };
+		64CC917A2A0A83E300468EEB /* Iris.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iris.swift; sourceTree = "<group>"; };
+		64CC917C2A0D097200468EEB /* Perceptron.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perceptron.swift; sourceTree = "<group>"; };
+		64CC917E2A0D150D00468EEB /* DMC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64CC91752A0A734C00468EEB /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +70,11 @@
 		64CC916B2A0A72C200468EEB /* BuildAIFromScratch */ = {
 			isa = PBXGroup;
 			children = (
+				64CC91762A0A73AE00468EEB /* Iris.csv */,
+				64CC91782A0A743B00468EEB /* KNN.swift */,
+				64CC917E2A0D150D00468EEB /* DMC.swift */,
+				64CC917C2A0D097200468EEB /* Perceptron.swift */,
+				64CC917A2A0A83E300468EEB /* Iris.swift */,
 				64CC916C2A0A72C200468EEB /* main.swift */,
 			);
 			path = BuildAIFromScratch;
@@ -69,15 +87,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64CC91702A0A72C200468EEB /* Build configuration list for PBXNativeTarget "BuildAIFromScratch" */;
 			buildPhases = (
+				64CC91672A0A72C200468EEB /* CopyFiles */,
 				64CC91652A0A72C200468EEB /* Sources */,
 				64CC91662A0A72C200468EEB /* Frameworks */,
-				64CC91672A0A72C200468EEB /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BuildAIFromScratch;
+			packageProductDependencies = (
+				64CC91742A0A734C00468EEB /* SwiftCSV */,
+			);
 			productName = BuildAIFromScratch;
 			productReference = 64CC91692A0A72C200468EEB /* BuildAIFromScratch */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +127,9 @@
 				Base,
 			);
 			mainGroup = 64CC91602A0A72C200468EEB;
+			packageReferences = (
+				64CC91732A0A734C00468EEB /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			productRefGroup = 64CC916A2A0A72C200468EEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,6 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64CC916D2A0A72C200468EEB /* main.swift in Sources */,
+				64CC917D2A0D097200468EEB /* Perceptron.swift in Sources */,
+				64CC917B2A0A83E300468EEB /* Iris.swift in Sources */,
+				64CC91792A0A743B00468EEB /* KNN.swift in Sources */,
+				64CC917F2A0D150D00468EEB /* DMC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +312,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64CC91732A0A734C00468EEB /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64CC91742A0A734C00468EEB /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64CC91732A0A734C00468EEB /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64CC91612A0A72C200468EEB /* Project object */;
 }
